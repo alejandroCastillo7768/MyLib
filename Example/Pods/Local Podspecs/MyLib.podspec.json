@@ -1,0 +1,22 @@
+{
+  "name": "MyLib",
+  "version": "0.1.0",
+  "summary": "A short description of MyLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/alejandroCastillo7768/MyLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "alejandroCastillo7768": "alejandro.castillo@fluxit.com.ar"
+  },
+  "source": {
+    "git": "https://github.com/alejandroCastillo7768/MyLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MyLib/Classes/**/*"
+}
