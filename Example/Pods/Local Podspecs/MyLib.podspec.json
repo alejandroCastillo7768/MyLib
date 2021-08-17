@@ -1,7 +1,6 @@
 {
   "name": "MyLib",
-  "version": "0.1.0",
-  "summary": "A short description of MyLib.",
+  "version": "0.0.2",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/alejandroCastillo7768/MyLib",
   "license": {
@@ -13,10 +12,20 @@
   },
   "source": {
     "git": "https://github.com/alejandroCastillo7768/MyLib.git",
-    "tag": "0.1.0"
+    "tag": "0.0.2"
   },
+  "source_files": "MyLib/Classes/**/*",
+  "swift_versions": "5.0",
+  "summary": "A library to test some things.",
   "platforms": {
-    "ios": "9.0"
+    "ios": "13.0"
   },
-  "source_files": "MyLib/Classes/**/*"
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "Tests/*"
+    }
+  ],
+  "swift_version": "5.0"
 }

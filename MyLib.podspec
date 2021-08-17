@@ -44,5 +44,16 @@ TODO: Add long description of the pod here.
   s.summary = 'A library to test some things.'
   s.ios.deployment_target = '13.0'
   
-  
+#  s.test_spec 'Tests' do |test_spec|
+#      test_spec.requires_app_host = true
+#          test_spec.source_files = 'Tests/*.{h,m}'
+##      test_spec.dependency 'OCMock' # This dependency will only be linked with your tests.
+
+#s.test_spec "Tests" do |test_spec|
+#  #test_spec.requires_app_host = true
+#  test_spec.frameworks = "XCTest"
+#  test_spec.source_files = "MyLib/Tests/**/*.{h,m,swift}"
+#end
+
+#    end
 end

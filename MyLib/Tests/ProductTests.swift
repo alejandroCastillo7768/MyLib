@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Pods_ModelsModule_Tests
 
 class ProductTests: XCTestCase {
     
