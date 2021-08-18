@@ -17,6 +17,8 @@
 		C170792C70815F662F7A656ECD899988 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B8E4BE562C7B1F9E317DF5F4D1B9F3 /* ShoppingCart.swift */; };
 		C743399F870D7374C914F7F06B45BB38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CF644E4D29DB94245A02F1AF2D149617 /* Pods-MyLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE56401BA89115ED99F80620394D35 /* Pods-MyLib_Tests-dummy.m */; };
+		D513BE2926CD6D4000DABA57 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9D940727FF8FB9C785EB98E56350EF41 /* Podfile */; };
+		D513BE2A26CD6D4100DABA57 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9D940727FF8FB9C785EB98E56350EF41 /* Podfile */; };
 		D5918CD626CC65F500730C02 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = D5918CD526CC65F500730C02 /* Tests */; };
 		D5918CD726CC65F500730C02 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = D5918CD526CC65F500730C02 /* Tests */; };
 /* End PBXBuildFile section */
@@ -301,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D513BE2926CD6D4000DABA57 /* Podfile in Resources */,
 				D5918CD726CC65F500730C02 /* Tests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D513BE2A26CD6D4100DABA57 /* Podfile in Resources */,
 				D5918CD626CC65F500730C02 /* Tests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

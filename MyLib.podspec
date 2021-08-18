@@ -49,11 +49,10 @@ TODO: Add long description of the pod here.
 #          test_spec.source_files = 'Tests/*.{h,m}'
 ##      test_spec.dependency 'OCMock' # This dependency will only be linked with your tests.
 
-#s.test_spec "Tests" do |test_spec|
-#  #test_spec.requires_app_host = true
-#  test_spec.frameworks = "XCTest"
-#  test_spec.source_files = "MyLib/Tests/**/*.{h,m,swift}"
-#end
+s.test_spec 'UnitTests' do |test_spec|
+test_spec.source_files = 'UnitTests/**/*.{h,m,swift}'
+test_spec.ios.resources = ['UnitTests/**/*.{json}']
+end
 
 #    end
 end
