@@ -49,9 +49,9 @@ TODO: Add long description of the pod here.
 #          test_spec.source_files = 'Tests/*.{h,m}'
 ##      test_spec.dependency 'OCMock' # This dependency will only be linked with your tests.
 
-s.test_spec 'UnitTests' do |test_spec|
-test_spec.source_files = 'UnitTests/**/*.{h,m,swift}'
-test_spec.ios.resources = ['UnitTests/**/*.{json}']
+s.test_spec 'Tests' do |test_spec|
+test_spec.source_files = 'Example/Tests/**/*.{h,m,swift}'
+test_spec.ios.resources = ['Example/Tests/**/*.{json}']
 end
 
 #    end
