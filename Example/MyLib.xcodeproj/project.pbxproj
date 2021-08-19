@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		34A366CC207E925CCE343211 /* Pods_MyLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66850BCFE91A364E949DFFD0 /* Pods_MyLib_Tests.framework */; };
-		D506029D26CDBC43009B36F7 /* ShoppingCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ShoppingCartTests.swift */; };
 		D50602A726CDBEA3009B36F7 /* MyLib_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D506029726CDBBEA009B36F7 /* MyLib_Unit_Tests.swift */; };
 		D5918CD126CC5FE100730C02 /* MyLib.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1947C191390815D1A8D4765D /* MyLib.podspec */; };
 		D59ACD2226CE8EEC00AE2689 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59ACD2126CE8EEC00AE2689 /* ProductTests.swift */; };
+		D59ACD3226CEB29E00AE2689 /* ShoppingCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ShoppingCartTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -272,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D59ACD2226CE8EEC00AE2689 /* ProductTests.swift in Sources */,
+				D59ACD3226CEB29E00AE2689 /* ShoppingCartTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D506029D26CDBC43009B36F7 /* ShoppingCartTests.swift in Sources */,
 				D50602A726CDBEA3009B36F7 /* MyLib_Unit_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
