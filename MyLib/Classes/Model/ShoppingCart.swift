@@ -15,7 +15,7 @@ public final class ShoppingCart {
     public var totalPrice    : Double {
         var result = 0 as Double
         for product in cart {
-            result += product.price ?? 0
+            result += product.price
         }
         return result
     }

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		34A366CC207E925CCE343211 /* Pods_MyLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66850BCFE91A364E949DFFD0 /* Pods_MyLib_Tests.framework */; };
-		D506029D26CDBC43009B36F7 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		D506029D26CDBC43009B36F7 /* ShoppingCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ShoppingCartTests.swift */; };
 		D50602A726CDBEA3009B36F7 /* MyLib_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D506029726CDBBEA009B36F7 /* MyLib_Unit_Tests.swift */; };
 		D5918CD126CC5FE100730C02 /* MyLib.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1947C191390815D1A8D4765D /* MyLib.podspec */; };
+		D59ACD2226CE8EEC00AE2689 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59ACD2126CE8EEC00AE2689 /* ProductTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,12 +20,14 @@
 		443490AEFA843E5EC8F3963D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* MyLib_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLib_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* ShoppingCartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTests.swift; sourceTree = "<group>"; };
 		66850BCFE91A364E949DFFD0 /* Pods_MyLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBCB02727DED8172C39A7D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D506029526CDBBEA009B36F7 /* MyLib-Unit-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyLib-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D506029726CDBBEA009B36F7 /* MyLib_Unit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLib_Unit_Tests.swift; sourceTree = "<group>"; };
 		D506029926CDBBEA009B36F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D59ACD2026CE8EEC00AE2689 /* MyLib_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyLib_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D59ACD2126CE8EEC00AE2689 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		DFBF45CC526516D688D37690 /* Pods-MyLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MyLib_Tests/Pods-MyLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,8 +82,10 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				D59ACD2126CE8EEC00AE2689 /* ProductTests.swift */,
+				607FACEB1AFB9204008FA782 /* ShoppingCartTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				D59ACD2026CE8EEC00AE2689 /* MyLib_Tests-Bridging-Header.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -172,7 +177,7 @@
 				TargetAttributes = {
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1250;
 					};
 					D506029426CDBBEA009B36F7 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59ACD2226CE8EEC00AE2689 /* ProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D506029D26CDBC43009B36F7 /* Tests.swift in Sources */,
+				D506029D26CDBC43009B36F7 /* ShoppingCartTests.swift in Sources */,
 				D50602A726CDBEA3009B36F7 /* MyLib_Unit_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DFBF45CC526516D688D37690 /* Pods-MyLib_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -405,6 +412,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/MyLib_Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -414,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06C65909DC565E5E49730A84 /* Pods-MyLib_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -422,6 +432,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/MyLib_Tests-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

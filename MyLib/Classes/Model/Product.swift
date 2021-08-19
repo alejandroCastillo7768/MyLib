@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 public struct Product {
-    public let id          : Int?
-    public let title       : String?
-    public let price       : Double?
-    public let image       : UIImage?
+    public let id          : Int
+    public let title       : String
+    public let price       : Double
+    public let image       : UIImage
     
     public init(id: Int, title: String, price: Double, image: UIImage) {
         self.id     = id
