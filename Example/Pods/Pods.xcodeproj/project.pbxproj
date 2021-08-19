@@ -19,8 +19,6 @@
 		CF644E4D29DB94245A02F1AF2D149617 /* Pods-MyLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE56401BA89115ED99F80620394D35 /* Pods-MyLib_Tests-dummy.m */; };
 		D513BE2926CD6D4000DABA57 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9D940727FF8FB9C785EB98E56350EF41 /* Podfile */; };
 		D513BE2A26CD6D4100DABA57 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9D940727FF8FB9C785EB98E56350EF41 /* Podfile */; };
-		D5918CD626CC65F500730C02 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = D5918CD526CC65F500730C02 /* Tests */; };
-		D5918CD726CC65F500730C02 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = D5918CD526CC65F500730C02 /* Tests */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +56,6 @@
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F0943B4FD6649FAD19D02FCA3C17E07 /* MyLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MyLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0B8E4BE562C7B1F9E317DF5F4D1B9F3 /* ShoppingCart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
-		D5918CD526CC65F500730C02 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tests; path = MyLib/Tests; sourceTree = "<group>"; };
 		D7D37A48C68062A3FEAF856782F60B8F /* Pods-MyLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA7F0DF80CDD5B98BC85457B82005750 /* MyLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MyLib.debug.xcconfig; sourceTree = "<group>"; };
 		F7538A520F741B455FE4BCFF7817FA7B /* ProductTableViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ProductTableViewController.xib; sourceTree = "<group>"; };
@@ -154,7 +151,6 @@
 		6ABBA6F031493A376D028304F6D221F6 /* MyLib */ = {
 			isa = PBXGroup;
 			children = (
-				D5918CD526CC65F500730C02 /* Tests */,
 				1A08742AAC5097C85E2C3E7E9BAC5646 /* Model */,
 				C5C08CA85F9E0E9A8144DDC5CC7044ED /* Pod */,
 				C787446A0B798D8BED11F871610B3C8B /* ProductTableView */,
@@ -304,7 +300,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D513BE2926CD6D4000DABA57 /* Podfile in Resources */,
-				D5918CD726CC65F500730C02 /* Tests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +308,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D513BE2A26CD6D4100DABA57 /* Podfile in Resources */,
-				D5918CD626CC65F500730C02 /* Tests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
