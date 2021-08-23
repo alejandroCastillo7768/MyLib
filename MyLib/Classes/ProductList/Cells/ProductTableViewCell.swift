@@ -28,7 +28,7 @@ class ProductTableViewCell: UITableViewCell {
     var product : Product?
     
     static func getNib() -> UINib {
-        return UINib(nibName: "ProductTableViewCell", bundle: nil)
+        return UINib(nibName: "ProductTableViewCell", bundle: Bundle(for: ProductTableViewCell.self))
     }
 
     override func awakeFromNib() {
