@@ -15,7 +15,7 @@ public class ProductListViewController: UIViewController {
     
     public init(productsList: [Product]) {
         self.productsList = productsList
-        super.init(nibName: "ProductListViewController", bundle: nil)
+        super.init(nibName: "ProductListViewController", bundle: Bundle(for: ProductListViewController.self))
     }
     
     required init?(coder: NSCoder) {
