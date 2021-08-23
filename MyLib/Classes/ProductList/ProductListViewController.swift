@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductListViewController: UIViewController {
+public class ProductListViewController: UIViewController {
     
     @IBOutlet weak var tableView    : UITableView?
     private var productsList        : [Product] = []
@@ -22,7 +22,7 @@ class ProductListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
     }
@@ -30,16 +30,16 @@ class ProductListViewController: UIViewController {
 
 
 extension ProductListViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return productsList.count
     }
     
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ProductTableViewCell.identifier, for: indexPath) as! ProductTableViewCell
         cell.setupCellWith(product: productsList[indexPath.row])
         return cell
