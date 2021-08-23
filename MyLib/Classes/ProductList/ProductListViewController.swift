@@ -13,7 +13,7 @@ public class ProductListViewController: UIViewController {
     private var productsList        : [Product] = []
     
     
-    init(productsList: [Product]) {
+    public init(productsList: [Product]) {
         self.productsList = productsList
         super.init(nibName: "ProductListViewController", bundle: nil)
     }
