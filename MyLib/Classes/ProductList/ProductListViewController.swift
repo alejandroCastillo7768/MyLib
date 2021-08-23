@@ -10,10 +10,10 @@ import UIKit
 public class ProductListViewController: UIViewController {
     
     @IBOutlet weak var tableView    : UITableView?
-    private var productsList        : [Product] = []
+    private var productsList        = [ProductViewModel]()
     
     
-    public init(productsList: [Product]) {
+    public init(productsList: [ProductViewModel]) {
         self.productsList = productsList
         super.init(nibName: "ProductListViewController", bundle: Bundle(for: ProductListViewController.self))
     }
@@ -41,7 +41,9 @@ extension ProductListViewController: UITableViewDataSource, UITableViewDelegate 
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ProductTableViewCell.identifier, for: indexPath) as! ProductTableViewCell
-        cell.setupCellWith(product: productsList[indexPath.row])
+        let productViewModel = productsList[indexPath.row]
+        cell.productViewModel = productViewModel
+//        cell.setupCellWith(product: productsList[indexPath.row])
         cell.delegate = self
         return cell
     }
@@ -57,13 +59,21 @@ extension ProductListViewController: UITableViewDataSource, UITableViewDelegate 
 }
 
 extension ProductListViewController: ProductSelectionDelegate {
-    func plusButtonSelectedDelegate(product: Product) {
+    func plusButtonSelectedDelegate(product: ProductViewModel) {
         ShoppingCart.shared.addProductToCart(product: product)
+        
+        if productsList[product.id].id == product.id {
+            productsList[product.id].quantity += 1 
+        }
         
         tableView?.reloadData()
     }
     
-    func minusButtonSelectedDelegate(product: Product) {
+    func minusButtonSelectedDelegate(product: ProductViewModel) {
+        if productsList[product.id].id == product.id {
+            productsList[product.id].quantity -= 1
+        }
+        
         tableView?.reloadData()
     }
 }

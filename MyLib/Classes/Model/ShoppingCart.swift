@@ -10,7 +10,7 @@ import Foundation
 public final class ShoppingCart {
     
     public static let shared = ShoppingCart()
-    public var cart          : [Product] = []
+    public var cart          : [ProductViewModel] = []
     
     public var totalPrice    : Double {
         var result = 0 as Double
@@ -22,15 +22,15 @@ public final class ShoppingCart {
     
     public init() { }
     
-    public func getCart() -> [Product] {
+    public func getCart() -> [ProductViewModel] {
         return self.cart
     }
     
-    public func addProductToCart(product: Product) {
+    public func addProductToCart(product: ProductViewModel) {
         self.cart.append(product)
     }
     
-    public func removeProductFromCart(product: Product) {
+    public func removeProductFromCart(product: ProductViewModel) {
         
     }
 }

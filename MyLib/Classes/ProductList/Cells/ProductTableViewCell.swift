@@ -8,8 +8,8 @@
 import UIKit
 
 protocol ProductSelectionDelegate: AnyObject {
-    func plusButtonSelectedDelegate(product: Product)
-    func minusButtonSelectedDelegate(product: Product)
+    func plusButtonSelectedDelegate(product: ProductViewModel)
+    func minusButtonSelectedDelegate(product: ProductViewModel)
 }
 
 
@@ -25,7 +25,15 @@ class ProductTableViewCell: UITableViewCell {
     
     static let identifier = "ProductTableViewCell"
     
-    var product : Product?
+    private var product : ProductViewModel?
+    
+    var productViewModel: ProductViewModel? {
+        didSet {
+            productNameLabel?.text   = productViewModel?.title
+            productImageView?.image  = productViewModel?.image
+            quantityOfProducts?.text = productViewModel?.quantityLabel
+        }
+    }
     
     static func getNib() -> UINib {
         return UINib(nibName: "ProductTableViewCell", bundle: Bundle(for: ProductTableViewCell.self))
@@ -36,12 +44,12 @@ class ProductTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func setupCellWith(product: Product? = nil) {
-        self.product = product
-        
-        productNameLabel?.text      = product?.title
-        productImageView?.image     = product?.image
-        quantityOfProducts?.text    = "\(product?.quantity ?? 0)"
+    func setupCellWith(product: ProductViewModel? = nil) {
+//        self.product = product
+//        
+//        productNameLabel?.text      = product?.title
+//        productImageView?.image     = product?.image
+//        quantityOfProducts?.text    = "\(product?.quantity ?? 0)"
     }
     
     
