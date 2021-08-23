@@ -29,4 +29,8 @@ public final class ShoppingCart {
     public func addProductToCart(product: Product) {
         self.cart.append(product)
     }
+    
+    public func removeProductFromCart(product: Product) {
+        
+    }
 }

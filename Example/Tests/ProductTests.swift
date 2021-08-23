@@ -11,8 +11,8 @@ import MyLib
 
 class ProductTests: XCTestCase {
     
-    let product  = Product(id: 1, title: "Some product", price: 100.00, image: UIImage(systemName: "square")!)
-    let product2 = Product(id: 2, title: "Some product", price: 200.00, image: UIImage(systemName: "square")!)
+    let product  = Product(id: 1, title: "Some product", price: 100.00, image: UIImage(systemName: "square")!, quantity: 0)
+    let product2 = Product(id: 2, title: "Some product", price: 200.00, image: UIImage(systemName: "square")!, quantity: 0)
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

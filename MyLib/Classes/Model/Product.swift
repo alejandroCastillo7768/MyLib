@@ -13,11 +13,13 @@ public struct Product {
     public let title       : String
     public let price       : Double
     public let image       : UIImage
+    public let quantity    : Int
     
-    public init(id: Int, title: String, price: Double, image: UIImage) {
-        self.id     = id
-        self.title  = title
-        self.price  = price
-        self.image  = image
+    public init(id: Int, title: String, price: Double, image: UIImage, quantity: Int) {
+        self.id       = id
+        self.title    = title
+        self.price    = price
+        self.image    = image
+        self.quantity = quantity
     }
 }

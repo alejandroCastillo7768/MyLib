@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		02A2E4E55C130CEEA6FD53F5F964421C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD4685BB330FAC0DB5EBF01F3EBB6C4 /* Product.swift */; };
-		1F06CD5CB071B9321EA5DED3A37399ED /* ProductTableViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = F7538A520F741B455FE4BCFF7817FA7B /* ProductTableViewController.xib */; };
 		66E64882F33E2E5009153D7B005B0815 /* MyLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D47B461DF9C7D8957EBF4D197F20DA4 /* MyLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7257EE92F9B5615B3049F4786B68F160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8805B42F92D24612F692A9DEDA8A7935 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C261C7489541B8256193692707E151 /* ProductTableViewController.swift */; };
 		97FDA038F8BAC0B515A2BE3802E206D0 /* Pods-MyLib_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52977643DB86B8BED4E65AA6DFD6F7E6 /* Pods-MyLib_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE71B601122671AE3A7E01381F1FBC36 /* MyLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 353F2EAD6D8E9C62EAB44557AC37C388 /* MyLib-dummy.m */; };
 		C170792C70815F662F7A656ECD899988 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B8E4BE562C7B1F9E317DF5F4D1B9F3 /* ShoppingCart.swift */; };
@@ -19,6 +17,10 @@
 		CF644E4D29DB94245A02F1AF2D149617 /* Pods-MyLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE56401BA89115ED99F80620394D35 /* Pods-MyLib_Tests-dummy.m */; };
 		D513BE2926CD6D4000DABA57 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9D940727FF8FB9C785EB98E56350EF41 /* Podfile */; };
 		D513BE2A26CD6D4100DABA57 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9D940727FF8FB9C785EB98E56350EF41 /* Podfile */; };
+		D5DFFB7426D3FAE5004D4786 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFFB7226D3FAE5004D4786 /* ProductListViewController.swift */; };
+		D5DFFB7526D3FAE5004D4786 /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5DFFB7326D3FAE5004D4786 /* ProductListViewController.xib */; };
+		D5DFFB7926D3FB12004D4786 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFFB7726D3FB12004D4786 /* ProductTableViewCell.swift */; };
+		D5DFFB7A26D3FB12004D4786 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5DFFB7826D3FB12004D4786 /* ProductTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,6 @@
 		02D107EEB735C346F3A112B279475EB3 /* MyLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MyLib.modulemap; sourceTree = "<group>"; };
 		2A54EC0C9D65E35832B381F35316C2E2 /* Pods-MyLib_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyLib_Tests.modulemap"; sourceTree = "<group>"; };
 		353F2EAD6D8E9C62EAB44557AC37C388 /* MyLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MyLib-dummy.m"; sourceTree = "<group>"; };
-		37C261C7489541B8256193692707E151 /* ProductTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		3DD4685BB330FAC0DB5EBF01F3EBB6C4 /* Product.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		41B4A8D5C12D740D342502E69F48CADF /* Pods-MyLib_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyLib_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		52977643DB86B8BED4E65AA6DFD6F7E6 /* Pods-MyLib_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyLib_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -56,9 +57,12 @@
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F0943B4FD6649FAD19D02FCA3C17E07 /* MyLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MyLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0B8E4BE562C7B1F9E317DF5F4D1B9F3 /* ShoppingCart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		D5DFFB7226D3FAE5004D4786 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		D5DFFB7326D3FAE5004D4786 /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		D5DFFB7726D3FB12004D4786 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		D5DFFB7826D3FB12004D4786 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		D7D37A48C68062A3FEAF856782F60B8F /* Pods-MyLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA7F0DF80CDD5B98BC85457B82005750 /* MyLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MyLib.debug.xcconfig; sourceTree = "<group>"; };
-		F7538A520F741B455FE4BCFF7817FA7B /* ProductTableViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ProductTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,9 +155,9 @@
 		6ABBA6F031493A376D028304F6D221F6 /* MyLib */ = {
 			isa = PBXGroup;
 			children = (
+				D5DFFB6D26D3FA68004D4786 /* ProductList */,
 				1A08742AAC5097C85E2C3E7E9BAC5646 /* Model */,
 				C5C08CA85F9E0E9A8144DDC5CC7044ED /* Pod */,
-				C787446A0B798D8BED11F871610B3C8B /* ProductTableView */,
 				0C4FDA97FCF316DEBCC333A054E3BBF0 /* Support Files */,
 			);
 			name = MyLib;
@@ -168,16 +172,6 @@
 				891A1CD56E8648E739ABCF354D6EBCB6 /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		C787446A0B798D8BED11F871610B3C8B /* ProductTableView */ = {
-			isa = PBXGroup;
-			children = (
-				37C261C7489541B8256193692707E151 /* ProductTableViewController.swift */,
-				F7538A520F741B455FE4BCFF7817FA7B /* ProductTableViewController.xib */,
-			);
-			name = ProductTableView;
-			path = MyLib/Classes/ProductTableView;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -197,6 +191,26 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5DFFB6D26D3FA68004D4786 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				D5DFFB7626D3FAFE004D4786 /* Cells */,
+				D5DFFB7226D3FAE5004D4786 /* ProductListViewController.swift */,
+				D5DFFB7326D3FAE5004D4786 /* ProductListViewController.xib */,
+			);
+			name = ProductList;
+			path = MyLib/Classes/ProductList;
+			sourceTree = "<group>";
+		};
+		D5DFFB7626D3FAFE004D4786 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D5DFFB7726D3FB12004D4786 /* ProductTableViewCell.swift */,
+				D5DFFB7826D3FB12004D4786 /* ProductTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F2103E8F04E7C526F3F9436250976D81 /* Targets Support Files */ = {
@@ -307,6 +321,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DFFB7526D3FAE5004D4786 /* ProductListViewController.xib in Resources */,
+				D5DFFB7A26D3FB12004D4786 /* ProductTableViewCell.xib in Resources */,
 				D513BE2A26CD6D4100DABA57 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,8 +344,8 @@
 			files = (
 				BE71B601122671AE3A7E01381F1FBC36 /* MyLib-dummy.m in Sources */,
 				02A2E4E55C130CEEA6FD53F5F964421C /* Product.swift in Sources */,
-				8805B42F92D24612F692A9DEDA8A7935 /* ProductTableViewController.swift in Sources */,
-				1F06CD5CB071B9321EA5DED3A37399ED /* ProductTableViewController.xib in Sources */,
+				D5DFFB7926D3FB12004D4786 /* ProductTableViewCell.swift in Sources */,
+				D5DFFB7426D3FAE5004D4786 /* ProductListViewController.swift in Sources */,
 				C170792C70815F662F7A656ECD899988 /* ShoppingCart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
