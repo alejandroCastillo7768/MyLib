@@ -43,8 +43,10 @@ extension ProductListViewController: UITableViewDataSource, UITableViewDelegate 
         let cell = tableView.dequeueReusableCell(withIdentifier: ProductTableViewCell.identifier, for: indexPath) as! ProductTableViewCell
         let productViewModel = productsList[indexPath.row]
         cell.productViewModel = productViewModel
-//        cell.setupCellWith(product: productsList[indexPath.row])
+        cell.product = productViewModel
         cell.delegate = self
+//        cell.setupCellWith(product: productViewModel)
+        
         return cell
     }
     
@@ -63,7 +65,8 @@ extension ProductListViewController: ProductSelectionDelegate {
         ShoppingCart.shared.addProductToCart(product: product)
         
         if productsList[product.id].id == product.id {
-            productsList[product.id].quantity += 1 
+            productsList[product.id].quantity += 1
+            productsList[product.id].minusButtonIsHidden = false
         }
         
         tableView?.reloadData()
@@ -71,7 +74,11 @@ extension ProductListViewController: ProductSelectionDelegate {
     
     func minusButtonSelectedDelegate(product: ProductViewModel) {
         if productsList[product.id].id == product.id {
+            ShoppingCart.shared.removeProductFromCart(product: product)
             productsList[product.id].quantity -= 1
+        }
+        if productsList[product.id].quantity <= 0 {
+            productsList[product.id].minusButtonIsHidden = true
         }
         
         tableView?.reloadData()

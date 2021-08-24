@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 
 public struct ProductViewModel {
-    let id             : Int
-    let title          : String
-    var quantity       : Int
-    var quantityLabel  : String
-    let price          : Double
-    let image          : UIImage
-    var minusIsEnabled : Bool
+    let id                   : Int
+    let title                : String
+    var quantity             : Int
+    var quantityLabel        : String
+    let price                : Double
+    let image                : UIImage
+    var minusButtonIsHidden  : Bool
     
     public init(product: Product) {
         self.id       = product.id
@@ -23,13 +23,14 @@ public struct ProductViewModel {
         self.quantity = product.quantity
         self.price    = product.price
         self.image    = product.image
+        self.minusButtonIsHidden = true
         
         if quantity <= 0 {
-            quantityLabel  = "0"
-            minusIsEnabled = false
+            quantityLabel       = "0"
+            minusButtonIsHidden = true
         } else {
-            quantityLabel  = "\(quantity)"
-            minusIsEnabled = true
+            quantityLabel       = "\(quantity)"
+            minusButtonIsHidden = false
         }
     }
 }

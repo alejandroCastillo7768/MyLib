@@ -25,13 +25,18 @@ class ProductTableViewCell: UITableViewCell {
     
     static let identifier = "ProductTableViewCell"
     
-    private var product : ProductViewModel?
+    var product : ProductViewModel?
     
     var productViewModel: ProductViewModel? {
         didSet {
-            productNameLabel?.text   = productViewModel?.title
-            productImageView?.image  = productViewModel?.image
-            quantityOfProducts?.text = productViewModel?.quantityLabel
+            productNameLabel?.text       = productViewModel?.title
+            productImageView?.image      = productViewModel?.image
+            quantityOfProducts?.text     = "\(productViewModel?.quantity ?? 0)"
+            if productViewModel?.minusButtonIsHidden == false {
+                minusProductButton?.isHidden = false
+            } else {
+                minusProductButton?.isHidden = true
+            }
         }
     }
     
@@ -44,13 +49,13 @@ class ProductTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func setupCellWith(product: ProductViewModel? = nil) {
+//    func setupCellWith(product: ProductViewModel? = nil) {
 //        self.product = product
-//        
+//
 //        productNameLabel?.text      = product?.title
 //        productImageView?.image     = product?.image
 //        quantityOfProducts?.text    = "\(product?.quantity ?? 0)"
-    }
+//    }
     
     
     @IBAction func didPressedPlusButton(_ sender: UIButton) {
