@@ -31,8 +31,6 @@ public final class ShoppingCart {
     }
     
     public func removeProductFromCart(product: ProductViewModel) {
-        if cart[product.id].id == product.id {
-            cart.remove(at: product.id)
-        }
+        cart.remove(at: product.id)
     }
 }
