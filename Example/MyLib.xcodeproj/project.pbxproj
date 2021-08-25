@@ -11,6 +11,7 @@
 		D5918CD126CC5FE100730C02 /* MyLib.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1947C191390815D1A8D4765D /* MyLib.podspec */; };
 		D59ACD2226CE8EEC00AE2689 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59ACD2126CE8EEC00AE2689 /* ProductTests.swift */; };
 		D59ACD3226CEB29E00AE2689 /* ShoppingCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ShoppingCartTests.swift */; };
+		D5BE1F7526D67A2C000D02E6 /* ProductsShippedToProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE1F7426D67A2C000D02E6 /* ProductsShippedToProductListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D506029926CDBBEA009B36F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D59ACD2026CE8EEC00AE2689 /* MyLib_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyLib_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D59ACD2126CE8EEC00AE2689 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
+		D5BE1F7426D67A2C000D02E6 /* ProductsShippedToProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsShippedToProductListVC.swift; sourceTree = "<group>"; };
 		DFBF45CC526516D688D37690 /* Pods-MyLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MyLib_Tests/Pods-MyLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 				607FACEB1AFB9204008FA782 /* ShoppingCartTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 				D59ACD2026CE8EEC00AE2689 /* MyLib_Tests-Bridging-Header.h */,
+				D5BE1F7426D67A2C000D02E6 /* ProductsShippedToProductListVC.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			files = (
 				D59ACD2226CE8EEC00AE2689 /* ProductTests.swift in Sources */,
 				D59ACD3226CEB29E00AE2689 /* ShoppingCartTests.swift in Sources */,
+				D5BE1F7526D67A2C000D02E6 /* ProductsShippedToProductListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
