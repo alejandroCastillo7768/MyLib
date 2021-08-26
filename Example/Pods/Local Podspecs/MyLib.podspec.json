@@ -1,6 +1,6 @@
 {
   "name": "MyLib",
-  "version": "0.0.2",
+  "version": "1.1.0",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/alejandroCastillo7768/MyLib",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/alejandroCastillo7768/MyLib.git",
-    "tag": "0.0.2"
+    "tag": "1.1.0"
   },
   "source_files": "MyLib/Classes/**/*",
   "swift_versions": "5.0",
