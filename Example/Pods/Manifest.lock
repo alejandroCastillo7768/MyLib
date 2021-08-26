@@ -1,15 +1,26 @@
 PODS:
-  - MyLib (1.1.0)
+  - Alamofire (4.8.2)
+  - MyLib (1.1.3):
+    - Alamofire (= 4.8.2)
+    - SVProgressHUD
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - MyLib (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SVProgressHUD
 
 EXTERNAL SOURCES:
   MyLib:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MyLib: 60a6554db1763d2cf61ec2bbc920079974f688f0
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  MyLib: ad76bc4d01710a64c4ec3e40c5a353095f193422
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
 PODFILE CHECKSUM: a00196b3cdaa484e47c50a1e3e3e927d6f2edc0f
 
