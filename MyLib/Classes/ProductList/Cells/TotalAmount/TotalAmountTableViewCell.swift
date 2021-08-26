@@ -10,6 +10,7 @@ import UIKit
 class TotalAmountTableViewCell: UITableViewCell {
     
     @IBOutlet weak var totalPriceLabel: UILabel?
+    @IBOutlet weak var img            : UIImageView?
 
     override func awakeFromNib() {
         super.awakeFromNib()
