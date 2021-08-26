@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MyLib: 44037df32c9153e17b3a0d570295abcbfdd5a23b
+  MyLib: 5d6abc9dd23aad11dbcf3e2bb4e0846044ed121b
 
 PODFILE CHECKSUM: a00196b3cdaa484e47c50a1e3e3e927d6f2edc0f
 

@@ -74,11 +74,11 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D59ACD2126CE8EEC00AE2689 /* ProductTests.swift */,
 				607FACEB1AFB9204008FA782 /* ShoppingCartTests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
+				D59ACD2126CE8EEC00AE2689 /* ProductTests.swift */,
 				D59ACD2026CE8EEC00AE2689 /* MyLib_Tests-Bridging-Header.h */,
 				D5BE1F7426D67A2C000D02E6 /* ProductsShippedToProductListVC.swift */,
+				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
