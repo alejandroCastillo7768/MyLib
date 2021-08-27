@@ -45,7 +45,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '13.0'
   
   s.dependency 'Alamofire', '5.4.3'
-  s.dependency 'SVProgressHUD', '2.5'
+  s.dependency 'SVProgressHUD', '2.2.5'
 #  s.test_spec 'Tests' do |test_spec|
 #      test_spec.requires_app_host = true
 #          test_spec.source_files = 'Tests/*.{h,m}'
