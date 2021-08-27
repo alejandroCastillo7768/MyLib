@@ -25,4 +25,4 @@ class TotalAmountTableViewCell: UITableViewCell {
     }
 }
 
-// agrego comentario para probar release 1.2.3
+// agrego comentario para probar release 1.2.4

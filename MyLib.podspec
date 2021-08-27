@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyLib'
-  s.version          = '1.2.3'
+  s.version          = '1.2.4'
 #  s.summary          = 'A short description of MyLib.'
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -45,7 +45,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '13.0'
   
   s.dependency 'Alamofire', '5.4.3'
-  s.dependency 'SVProgressHUD'
+  s.dependency 'SVProgressHUD', '2.5'
 #  s.test_spec 'Tests' do |test_spec|
 #      test_spec.requires_app_host = true
 #          test_spec.source_files = 'Tests/*.{h,m}'
