@@ -24,3 +24,5 @@ class TotalAmountTableViewCell: UITableViewCell {
         totalPriceLabel?.text = "\(ShoppingCart.shared.totalPrice)"
     }
 }
+
+// agrego comentario para probar release 1.2.3
