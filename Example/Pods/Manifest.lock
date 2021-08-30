@@ -1,14 +1,15 @@
 PODS:
   - Alamofire (5.4.3)
-  - MyLib (1.2.5):
+  - MyLib (1.2.6):
     - Alamofire (= 5.4.3)
-    - MyLoginModule (= 0.1.0)
+    - MyLoginModule
     - SVProgressHUD (= 2.2.5)
   - MyLoginModule (0.1.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - MyLib (from `../`)
+  - MyLoginModule
 
 SPEC REPOS:
   trunk:
@@ -22,10 +23,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
-  MyLib: 9d566adbc387ad6d239d3110333b3bc7990f03f3
+  MyLib: 7afc1e6273d9283a055703c52809096aba8de722
   MyLoginModule: c68a17d8d4c1c5647f6a448e3c2d2b297b924e8e
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: a00196b3cdaa484e47c50a1e3e3e927d6f2edc0f
+PODFILE CHECKSUM: abb3dc16972f6d34bcc43d07ed9b598a57aefcf8
 
 COCOAPODS: 1.10.2

@@ -13,6 +13,7 @@ public class ProductListViewController: UIViewController {
     @IBOutlet weak var tableView    : UITableView?
     private var productsList        = [ProductViewModel]()
     
+    let asd = LoginViewController()
     
     public init(productsList: [ProductViewModel]) {
         self.productsList = productsList
