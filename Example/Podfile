@@ -1,7 +1,10 @@
+source 'https://github.com/alejandroCastillo7768/MobilePodspecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 target 'MyLib_Tests' do
   pod 'MyLib', :path => '../'
-  pod 'MyLoginModule'
+#  pod 'MyLoginModule'
   
   
 end
