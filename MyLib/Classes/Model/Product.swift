@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import MyLoginModule
 
 public struct Product {
     public let id          : Int

@@ -26,9 +26,6 @@
     ],
     "SVProgressHUD": [
       "2.2.5"
-    ],
-    "MyLoginModule": [
-      "~> 1.1.1"
     ]
   },
   "testspecs": [

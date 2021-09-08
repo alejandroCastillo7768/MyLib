@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyLib'
-  s.version          = '1.3.0'
+  s.version          = '2.0.0'
 #  s.summary          = 'A short description of MyLib.'
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -49,7 +49,7 @@ TODO: Add long description of the pod here.
   s.dependency 'Alamofire', '5.4.3'
   s.dependency 'SVProgressHUD', '2.2.5'
   
-  s.dependency 'MyLoginModule', '~> 1.1.1'
+#  s.dependency 'MyLoginModule', '~> 1.1.1'
 
   
   
