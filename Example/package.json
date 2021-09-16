@@ -1,0 +1,14 @@
+{
+  "name": "MyLib",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "yarn react-native start"
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.11",
+    "react": "^17.0.2",
+    "react-native": "^0.65.1",
+    "react-native-codegen": "^0.0.7"
+  }
+}

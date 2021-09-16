@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+//import Alamofire
+//import React
 
 public struct Product {
     public let id          : Int
