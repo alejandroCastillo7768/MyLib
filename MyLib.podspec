@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MyLib'
-  s.version          = '2.1.0'
+  s.version          = '2.1.1'
   #  s.summary          = 'A short description of MyLib.'
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
   s.summary = 'A library to test some things.'
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '13.0'
 
   s.test_spec 'Tests' do |test_spec|
     test_spec.source_files = 'Example/Tests/**/*.{h,m,swift}'
